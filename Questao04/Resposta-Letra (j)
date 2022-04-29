@@ -1,0 +1,3 @@
+p4 = p5 + 1;
+idade = *p4;
+printf("%d \n", idade); // Imprime 27

@@ -1,0 +1,4 @@
+p = mat + 1; // Expressão Válida
+p = mat++; // Expressão INVÁLIDA, pois se trata de um endereço e não pode ser incrementado.
+p = ++mat; // Expressão INVÁLIDA, endereços de memória não podem ser incrementados.
+x = (*mat)++; // Expressão Válida

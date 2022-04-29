@@ -1,0 +1,19 @@
+// Ponteiros para funções podem ser passados como argumentos para outras funções, e a função apontada pode ser chamada a partir de seu ponteiro.
+// A declaração de um ponteiro para a função deve incluir os parênteses em torno do nome da variável ponteiro.
+
+EXEMPLO:
+
+#include<stdio.h>
+
+void soma(int x, int y){
+    printf("%d\n", x + y);
+}
+
+int main(){
+    void (*pf)(int, int) = soma;
+    pf(2, 4);
+
+    return(0);
+}
+
+// SAÍDA: 6

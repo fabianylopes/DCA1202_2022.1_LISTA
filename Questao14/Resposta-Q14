@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int compara(const void *a, const void *b){ //Função que compara
+	return ( *(int*)a - *(int*)b );
+}
+
+int main(){
+	
+	int n, i;
+	float *x;
+	
+	printf("Digite a quantidade de valores: "); //Recebe a quantidade de valores a serem ordenados
+	scanf("%d", &n);
+	
+	x = (float*)malloc(n * sizeof(int)); //Aloca memória para o array
+	
+	for(i=0;i<n;i++){
+		printf("Valor da posicao %d: ", i); //Atribui os valores
+		scanf("%f", &x[i]);
+	}
+	
+	qsort(x, n, sizeof(float), compara); //Função qsort que ordena os valores
+	
+	printf("\nValores ordenados: "); //Imprime os valores ordenados
+	for(i=0;i<n;i++){
+		printf("%.1f ", x[i]);
+	}
+	
+	return 0;
+}

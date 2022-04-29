@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){	
+	
+	char x[4];
+	int y[4];
+	float z[4];
+	double k[4];
+	
+	printf("Vetor x tipo char: %x, %x, %x, %x", x, x+1, x+2, x+3);
+	printf("\nVetor y tipo int: %x, %x, %x, %x", y, y+1, y+2, y+3);
+	printf("\nVetor z tipo float: %x, %x, %x, %x", z, z+1, z+2, z+3);
+	printf("\nVetor k tipo double: %x, %x, %x, %x", k, k+1, k+2, k+3);
+	
+	return 0;
+}
+
+// SAÍDA:
+
+Vetor x tipo char: 62fe10, 62fe11, 62fe12, 62fe13
+Vetor y tipo int: 62fe00, 62fe04, 62fe08, 62fe0c
+Vetor z tipo float: 62fdf0, 62fdf4, 62fdf8, 62fdfc
+Vetor k tipo double: 62fdd0, 62fdd8, 62fde0, 62fde8
+
+// O resultado diverge na quantidade de bytes do tipo int. Na minha máquina ele ocupa 4 bytes.

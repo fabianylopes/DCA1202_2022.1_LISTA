@@ -1,0 +1,20 @@
+int main(){
+    int vet[] = {4,9,13};
+    int i;
+    for(i=0;i<3;i++){
+        printf("%d ",*(vet+i));
+    }
+}
+// Esse primeiro programa imprime os elementos do vetor. 
+// SAÍDA: 4 9 13
+
+int main(){
+    int vet[] = {4,9,13};
+    int i;
+    for(i=0;i<3;i++){
+        printf("%X ",vet+i);
+    }
+}
+
+// Esse segundo imprime os endereços. 
+// SAÍDA: 62FE10 62FE14 62FE18

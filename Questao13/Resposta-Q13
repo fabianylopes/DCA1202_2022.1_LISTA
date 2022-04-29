@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void ordena(float x[], int n){
+	int i, j, tmp;
+	
+	for(i=0;i<n;i++){
+		for(j=i+1;j<n;j++){
+			if(x[i]>x[j]){
+				tmp = x[i];
+				x[i] = x[j];
+				x[j] = tmp;
+			}
+		}
+	
+	}
+	
+}
+
+int main(){
+	
+	int n, i, j;
+	float *x;
+	
+	printf("Digite a quantidade de valores: ");
+	scanf("%d", &n);
+	
+	x = (float*)malloc(n * sizeof(int));
+	
+	for(i=0;i<n;i++){
+		printf("Valor da posicao %d: ", i);
+		scanf("%f", &x[i]);
+	}
+	
+	ordena(x, n);
+	
+	printf("\nValores ordenados: ");
+	for(i=0;i<n;i++){
+		printf("%.1f ", x[i]);
+	}
+	
+	free(x);
+	
+	return 0;
+}

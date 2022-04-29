@@ -1,0 +1,3 @@
+p3 = &nome[4];
+aux = *p3;
+printf("%c \n", aux); // Imprime e

@@ -1,0 +1,11 @@
+float aloha[10], coisas[10][5], *pf, value = 2.2;
+int i=3;
+
+aloha[2] = value; // Comando VÁLIDO
+scanf("%f", &aloha); // Comando VÁLIDO
+aloha = value; // Comando INVÁLIDO. Não informou a posição para atribuir o valor.
+printf("%f", aloha); // Comando VÁLIDO
+coisas[4][4] = aloha[3]; // Comando VÁLIDO
+coisas[5] = aloha; //Comando INVÁLIDO. Precisaria de um laço para percorrer todo o array.
+pf = value; // Comando INVÁLIDO. pf é um ponteiro e recebe endereços e não valores.
+pf = aloha; // Comando VÁLIDO

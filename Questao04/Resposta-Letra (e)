@@ -1,0 +1,2 @@
+p3 = nome;
+printf("%c \n", *p3); // Imprime P

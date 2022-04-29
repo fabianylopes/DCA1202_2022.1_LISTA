@@ -1,0 +1,4 @@
+p == &i;  // True (No caso retorna o valor 1)
+*p - *q; // -2 (Pois *p vale 3, que é o conteudo da variável que o ponteiro aponta e *q vale 5, ou seja, 3-5=2)
+**&p; // 3 (Pois retorna o valor armazenado no endereço de memória da variável i)
+3 - *p/(*q) + 7; // 10 ('*p/(*q)' vale 0 pois irá retornar um inteiro, logo: 3 - 0 + 7 = 10)

@@ -1,0 +1,8 @@
+p = i; // Ilegal (Ponteiro não aponta para variável e sim para o endereço, precisaria do &)
+q = &j; // Legal
+p = &*&i; // Legal
+i = (*&)j; // Ilegal (i não consegue receber o valor guardado no endereço de j devido aos '()')
+i = *&j; // Legal
+i = *&*&j; // Legal
+q = *p; // Ilegal (Deveria usar '&' e não '*')
+i = (*p)++ + *q; // Legal

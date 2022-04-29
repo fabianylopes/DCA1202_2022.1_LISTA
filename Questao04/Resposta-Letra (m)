@@ -1,0 +1,2 @@
+p5 = &vetor[2] - 1;
+printf("%d \n", *p5); // Imprime 45
